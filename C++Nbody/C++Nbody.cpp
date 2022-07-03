@@ -12,9 +12,10 @@ class Nbody
 		double mass;
 		double x;
 		double y;
-	private:
 		double xv;
 		double yv;
+	private:
+
 		double force_x;
 		double force_y;
 		int timestep = 100;
@@ -65,7 +66,5 @@ int main()
 {
 	Nbody earth;
 	earth.mass = 5.9742e+24;
-	earth.x = -1 * AU;
-	earth.y = 2;
 
 };
