@@ -47,7 +47,7 @@ class Nbody
 			for (int i = 0; i < sizeof(bodies); i ++ ) 
 			{
 				total_force_x += force_x;
-				total_force_x += force_y;
+				total_force_y += force_y;
 
 				xv = total_force_x / mass * timestep;
 				yv = total_force_y / mass * timestep;
@@ -61,3 +61,11 @@ class Nbody
 	
 };
 
+int main()
+{
+	Nbody earth;
+	earth.mass = 5.9742e+24;
+	earth.x = -1 * AU;
+	earth.y = 2;
+
+};
